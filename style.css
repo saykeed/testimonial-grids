@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    
+}
+
+
+#bigbody{
+    background: rgba(118, 153, 218, 0.186);
+}
+
+#wrapcon{
+    
+    max-width: 1100px;
+    margin-top: 100px;
+}
+
+/* for the daniel column */
+
+#griddaniel{
+    background: hsl(263, 55%, 52%);
+    padding: 30px 40px;
+    border-radius: 10px;
+}
+
+#gridjona{
+    background: hsl(217, 19%, 35%);
+    padding: 30px 40px;
+    border-radius: 10px;
+}
+
+#gridhead{
+    display: flex;
+    align-items: center;
+    
+    margin: 0;
+}
+
+#gridhead img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+
+#gridheadtext h5{
+    color: hsl(0, 0%, 81%);
+    margin-bottom: 0;
+    font-size: 16px;
+    
+}
+
+#griddaniel p{
+    color: hsla(0, 0%, 81%, 50%);
+    margin-bottom: 0;
+    font-size: 13px;
+    
+}
+
+#griddaniel h4{
+    font-size: 20px;
+    color: white;
+    margin: 30px 0;
+}
+
+
+/* for the jonathan column */
+
+
+#gridjona{
+    background: hsl(217, 19%, 35%);
+    padding: 30px 40px;
+    border-radius: 10px;
+}
+
+#gridhead{
+    display: flex;
+    align-items: center;
+    
+    margin: 0;
+}
+
+#gridhead img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+
+#gridheadtext h5{
+    color: hsl(0, 0%, 81%);
+    margin-bottom: 0;
+    font-size: 16px;
+    
+}
+
+#gridjona p{
+    color: hsla(0, 0%, 81%, 50%);
+    margin-bottom: 0;
+    font-size: 13px;
+    
+}
+
+#gridjona h4{
+    font-size: 20px;
+    color: white;
+    margin: 30px 0;
+}
+
+
+/* for the jeanette column */
+
+
+#gridjean{
+    background: hsl(0, 0%, 100%);
+    padding: 30px 40px;
+    border-radius: 10px;
+}
+
+#gridhead{
+    display: flex;
+    align-items: center;
+    
+    margin: 0;
+}
+
+#gridhead img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+
+#gridjean #gridheadtext h5{
+    color: hsl(217, 19%, 35%);
+    margin-bottom: 0;
+    font-size: 16px;
+    
+}
+
+#gridjean p{
+    color: hsla(217, 19%, 35%, 50%);
+    margin-bottom: 0;
+    font-size: 13px;
+    
+}
+
+#gridjean h4{
+    font-size: 20px;
+    color: hsl(217, 19%, 35%);
+    margin: 30px 0;
+}
+
+
+/* for the patrick column */
+
+
+#gridpatrick{
+    background: hsl(219, 29%, 14%);
+    padding: 30px 40px;
+    border-radius: 10px;
+}
+
+#gridhead{
+    display: flex;
+    align-items: center;
+    
+    margin: 0;
+}
+
+#gridhead img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+
+#gridpatrick #gridheadtext h5{
+    color: hsl(0, 0%, 81%);
+    margin-bottom: 0;
+    font-size: 16px;
+    
+}
+
+#gridpatrick p{
+    color: hsla(0, 0%, 81%, 50%);
+    margin-bottom: 0;
+    font-size: 13px;
+    
+}
+
+#gridpatrick h4{
+    font-size: 20px;
+    color: white;
+    margin: 30px 0;
+}
+
+
+/* for the Kira column */
+
+
+#gridkira{
+    background: hsl(0, 0%, 100%);
+    padding: 30px 40px;
+    border-radius: 10px;
+}
+
+#gridhead{
+    display: flex;
+    align-items: center;
+    
+    margin: 0;
+}
+
+#gridhead img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+
+#gridkira #gridheadtext h5{
+    color: hsl(217, 19%, 35%);
+    margin-bottom: 0;
+    font-size: 16px;
+    
+}
+
+#gridkira p{
+    color: hsla(217, 19%, 35%, 50%);
+    margin-bottom: 0;
+    font-size: 13px;
+    
+}
+
+#gridkira h4{
+    font-size: 20px;
+    color: hsl(217, 19%, 35%);
+    margin: 30px 0;
+}
