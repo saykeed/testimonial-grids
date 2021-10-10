@@ -8,247 +8,216 @@
     
 }
 
-
-#bigbody{
-    background: rgba(118, 153, 218, 0.186);
+#body{
+    background: rgba(138, 216, 216, 0.549);
 }
 
-#wrapcon{
+/* for all h5 in the grid*/
+header h5{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 17px;
     
-    max-width: 1100px;
-    margin-top: 100px;
 }
 
-/* for the daniel column */
+/* margin tp & bottom for all h4 in the grid*/
+#gridcon h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px 0;
+    
+}
 
-#griddaniel{
+
+/* for the grid setup and the backgroubnd and general gap and padding */
+#gridcon{
+    display: grid;
+    grid-template-columns: 300px auto 300px 300px;
+    grid-gap: 30px;
+    padding: 10px;
+   max-width: 1440px;
+    margin: 40px auto;
+ 
+}
+
+#daniel, #jonathan, #kira, #jean, #patrick{
+    padding: 30px;
+    border-radius: 20px;
+}
+
+#daniel{
+    grid-column: 1 / 3;
     background: hsl(263, 55%, 52%);
-    padding: 30px 40px;
-    border-radius: 10px;
+    position: relative;
 }
 
-#gridjona{
+#jonathan{
     background: hsl(217, 19%, 35%);
-    padding: 30px 40px;
-    border-radius: 10px;
 }
 
-#gridhead{
-    display: flex;
-    align-items: center;
-    
-    margin: 0;
+#kira{
+    grid-column: 4;
+    grid-row: 1 / 3;
+    background: white;
 }
 
-#gridhead img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 20px;
+#jean{
+    grid-column: 1;
+    grid-row: 2;
+    background: white;
 }
 
-
-
-#gridheadtext h5{
-    color: hsl(0, 0%, 81%);
-    margin-bottom: 0;
-    font-size: 16px;
-    
-}
-
-#griddaniel p{
-    color: hsla(0, 0%, 81%, 50%);
-    margin-bottom: 0;
-    font-size: 13px;
-    
-}
-
-#griddaniel h4{
-    font-size: 20px;
-    color: white;
-    margin: 30px 0;
-}
-
-
-/* for the jonathan column */
-
-
-#gridjona{
-    background: hsl(217, 19%, 35%);
-    padding: 30px 40px;
-    border-radius: 10px;
-}
-
-#gridhead{
-    display: flex;
-    align-items: center;
-    
-    margin: 0;
-}
-
-#gridhead img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-
-
-#gridheadtext h5{
-    color: hsl(0, 0%, 81%);
-    margin-bottom: 0;
-    font-size: 16px;
-    
-}
-
-#gridjona p{
-    color: hsla(0, 0%, 81%, 50%);
-    margin-bottom: 0;
-    font-size: 13px;
-    
-}
-
-#gridjona h4{
-    font-size: 20px;
-    color: white;
-    margin: 30px 0;
-}
-
-
-/* for the jeanette column */
-
-
-#gridjean{
-    background: hsl(0, 0%, 100%);
-    padding: 30px 40px;
-    border-radius: 10px;
-}
-
-#gridhead{
-    display: flex;
-    align-items: center;
-    
-    margin: 0;
-}
-
-#gridhead img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-
-
-#gridjean #gridheadtext h5{
-    color: hsl(217, 19%, 35%);
-    margin-bottom: 0;
-    font-size: 16px;
-    
-}
-
-#gridjean p{
-    color: hsla(217, 19%, 35%, 50%);
-    margin-bottom: 0;
-    font-size: 13px;
-    
-}
-
-#gridjean h4{
-    font-size: 20px;
-    color: hsl(217, 19%, 35%);
-    margin: 30px 0;
-}
-
-
-/* for the patrick column */
-
-
-#gridpatrick{
+#patrick{
+    grid-column: 2 / 4;
+    grid-row: 2;
     background: hsl(219, 29%, 14%);
-    padding: 30px 40px;
-    border-radius: 10px;
 }
 
-#gridhead{
+
+/* for each grid header that contains the picture and name */
+header{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    
-    margin: 0;
 }
 
-#gridhead img{
+img{
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 40px;
     margin-right: 20px;
 }
 
+#daniel_svg{
+    position: absolute;
+    border-radius: 0;
+    width: 100px;
+    height: auto;
+    top: 0;
+    right: 60px;
+    
+
+}
 
 
-#gridpatrick #gridheadtext h5{
+/* removing the default margins on H(s) and p elements*/
+header h5, header p, h4{
+    margin: 0 0;
+}
+
+/* setting the text color for some of the grid that has the same colors
+this includes daniel, jonathan and patrick */
+#daniel h5, #daniel h4, #jonathan h5, #jonathan h4, #patrick h5, #patrick h4{
     color: hsl(0, 0%, 81%);
-    margin-bottom: 0;
-    font-size: 16px;
+    position: relative;
+    z-index: 1;
     
 }
 
-#gridpatrick p{
+#daniel header p, #jonathan header p, #patrick header p {
     color: hsla(0, 0%, 81%, 50%);
-    margin-bottom: 0;
+}
+
+#daniel p, #jonathan p, #patrick p{
+    color: hsla(0, 0%, 81%, 70%);
     font-size: 13px;
-    
-}
-
-#gridpatrick h4{
-    font-size: 20px;
-    color: white;
-    margin: 30px 0;
-}
-
-
-/* for the Kira column */
-
-
-#gridkira{
-    background: hsl(0, 0%, 100%);
-    padding: 30px 40px;
-    border-radius: 10px;
-}
-
-#gridhead{
-    display: flex;
-    align-items: center;
-    
-    margin: 0;
-}
-
-#gridhead img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 20px;
 }
 
 
 
-#gridkira #gridheadtext h5{
+
+/* setting the text color for some of the grid that has the same colors
+this includes kira and jean */
+#kira h5, #kira h4, #jean h5, #jean h4{
     color: hsl(217, 19%, 35%);
-    margin-bottom: 0;
-    font-size: 16px;
-    
 }
 
-#gridkira p{
+#kira header p, #jean header p {
     color: hsla(217, 19%, 35%, 50%);
-    margin-bottom: 0;
-    font-size: 13px;
-    
 }
 
-#gridkira h4{
-    font-size: 20px;
-    color: hsl(217, 19%, 35%);
-    margin: 30px 0;
+#kira p, #jean p{
+    color: hsla(217, 19%, 35%, 70%);
+    font-size: 13px;
+}
+
+
+
+/* for screens lesser than 1100px*/
+@media screen and (max-width:1100px){
+    #gridcon{
+        grid-template-columns: auto auto auto auto;
+    }
+
+    #daniel{
+        grid-column: 1 / span 3;
+        grid-row: 1;
+    }
+    
+    #jonathan{
+        grid-column: 4 / span 1;
+        grid-row: 1;
+    }
+    
+    #jean{
+        grid-column: 1 / span 1;
+        grid-row: 2;
+    }
+    
+    #patrick{
+        grid-column: 2 / span 3;
+        grid-row: 2;
+    }
+    
+    #kira{
+        grid-column: 1 / span 4;
+        grid-row: 3;
+    }
+}
+
+
+
+/* for screens lesser than 800px (tablets & phones) */
+@media screen and (max-width:800px){
+    #gridcon{
+        grid-template-columns: auto auto auto auto;
+    }
+    
+    
+#daniel{
+    grid-column: 1 / span 4;
+    grid-row: 1;
+}
+
+#jonathan{
+    grid-column: 1 / span 4;
+    grid-row: 2;
+}
+
+#jean{
+    grid-column: 1 / span 4;
+    grid-row: 3;
+}
+
+#patrick{
+    grid-column: 1 / span 4;
+    grid-row: 4;
+}
+
+#kira{
+    grid-column: 1 / span 4;
+    grid-row: 5;
+}
+
+
+#daniel_svg{
+    position: absolute;
+    border-radius: 0;
+    width: 100px;
+    height: auto;
+    top: 0;
+    right: 20px;
+    
+
+}
+    
 }
